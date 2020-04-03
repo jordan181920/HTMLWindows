@@ -1,0 +1,16 @@
+
+    <div routerLink = "/home">Home</div>
+    <div routerLink = "/gamelist">Lista Videogiochi</div>
+    <div routerLink = "/detailgame">Dettaglio Videogioco</div>
+    <div routerLink = "/editgames">Modificare</div>
+    <div routerLink = "/login">LogIn</div>
+
+<ul>    
+        <li *ngFor="let menuItem of menuItems">
+       <span>
+           
+           {{menuItem.description}}
+       </span>
+       <button {click}="selectMenuItems(menuItem.id)">></button>
+    </li>
+    </ul> 
